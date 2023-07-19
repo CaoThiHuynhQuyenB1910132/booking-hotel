@@ -12,7 +12,7 @@ return new class () extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('content');
-            $table->string('img');
+            $table->string('image');
             $table->timestamps();
         });
     }

@@ -11,6 +11,6 @@ class Review extends Model
     protected $fillable = [
         'user_id',
         'content',
-        'img',
+        'image',
     ];
 }

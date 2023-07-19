@@ -13,7 +13,7 @@ return new class () extends Migration
             $table->string('room_id');
             $table->integer('original_price');
             $table->integer('selling_price');
-            $table->string('desc');
+            $table->string('description');
             $table->timestamps();
         });
     }

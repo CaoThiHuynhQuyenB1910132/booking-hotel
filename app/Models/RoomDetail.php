@@ -13,7 +13,7 @@ class RoomDetail extends Model
         'room_id',
         'original_price',
         'selling_price',
-        'desc',
+        'description',
     ];
 
     public function room(): BelongsTo

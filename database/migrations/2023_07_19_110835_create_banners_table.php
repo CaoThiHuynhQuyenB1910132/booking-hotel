@@ -10,9 +10,8 @@ return new class () extends Migration
     {
         Schema::create('banners', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('address');
-            $table->string('phone');
+            $table->string('image');
+            $table->string('status');
             $table->timestamps();
         });
     }
