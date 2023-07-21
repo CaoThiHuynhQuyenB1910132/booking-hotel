@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Booking extends Model
 {
+
     protected $table = 'bookings';
 
     protected $fillable = [
