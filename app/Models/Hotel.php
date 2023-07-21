@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Hotel extends Model
@@ -15,6 +17,10 @@ class Hotel extends Model
         'phone',
     ];
 
+    public static function getHotelById(string $id): Model|Collection|Builder|array|null
+    {
+        return Hotel::query()->findOrFail($id);
+    }
     public function bookings(): HasMany
     {
         return $this->hasMany(Booking::class);
